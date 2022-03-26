@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.personCard{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
+    padding-bottom: 50px;
+    border-radius: 40px 5px 40px 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+}
+
+.personCard-header{
+    margin: 30px;
+}
+
+.personCard-header h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+.personCard-body{
+    width: 700px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F06C9B;
+    height: 300px;
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 30px 5px 30px 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.61);
+
+}
+
+.personCard-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:50%;
+}
+
+.personCard-footer .key{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.personCard-footer .value{
+    font-size: 20px;
+    color: #f6b759;
+    font-style: italic;
+    width: 50%;
+}
+
+.objContainer{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personImg{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.backContainer{
+    width: 100px;
+}
+
+.back{
+    position: absolute;
+    top: -5rem;
+    left: 2rem;
+    width: 100%;
+    cursor: pointer;
+}
