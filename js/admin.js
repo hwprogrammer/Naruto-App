@@ -7,6 +7,16 @@ $back.addEventListener('click', e =>{
 	window.open('./index.html', '_self')
 })
 
+window.addEventListener('load', () =>{
+		const byImg = JSON.parse(localStorage.getItem('byImg'))
+		const byColor = JSON.parse(localStorage.getItem('byColor'))
+		if (byColor){
+			document.body.style.background = byColor
+		}else if (byImg){
+			document.body.style.background = byImg
+		}
+})
+
 $submit.addEventListener('click', e => {
 	e.preventDefault()
 	const obj = {}
