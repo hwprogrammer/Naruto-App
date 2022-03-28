@@ -12,6 +12,15 @@ window.addEventListener('load', () =>{
 	}
 })
 
+window.addEventListener('load', () =>{
+	const byImg = JSON.parse(localStorage.getItem('byImg'))
+	const byColor = JSON.parse(localStorage.getItem('byColor'))
+	if (byColor){
+		document.body.style.background = byColor
+	}else if (byImg){
+		document.body.style.background = byImg
+	}
+})
 
 $signin.addEventListener('click', e =>{
 	e.preventDefault()

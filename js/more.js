@@ -9,6 +9,21 @@ window.addEventListener('load', () =>{
 	}
 })
 
+window.addEventListener('load', () =>{
+	if (!localStorage.getItem('byColor') && !localStorage.getItem('byImg')){
+		document.body.style.background = 'whitesmoke'
+	}else{
+		const byImg = JSON.parse(localStorage.getItem('byImg'))
+		const byColor = JSON.parse(localStorage.getItem('byColor'))
+		if (byColor){
+			document.body.style.background = byColor
+		}else if (byImg){
+			document.body.style.background = byImg
+		}
+	}
+})
+
+
 $personContainer.innerHTML = baseOfPerson.map(({name, power, village, level, clan, image}) => {
 	$titleSite.innerText = name
 	return `
