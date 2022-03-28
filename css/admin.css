@@ -28,7 +28,7 @@ body {
 
 .containerAdmin {
     width: 80%;
-    height: 350px;
+    height: 850px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -63,6 +63,14 @@ body {
     background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
     border: 0;
     color: whitesmoke;
+
 }
 
+@media (max-width: 426px) {
+    .backBtn{
+        width: 85px;
+        top: -2.5rem;
+        left: 5px;
+    }
+}
 
