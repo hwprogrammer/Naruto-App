@@ -108,6 +108,7 @@ body {
 
 .addCharacter {
 	padding: 15px 70px;
+	margin-bottom: 50px;
 	border: 0;
 	border-radius: 5px 30px 5px 30px;
 	background: linear-gradient(98.89deg, #ff9b05 25.06%, #ff8f3f 88.94%);
@@ -205,4 +206,67 @@ body {
 	color: #ff9b05;
 	border: 1px solid #ff8f3f;
 	box-shadow: 0 0 10px #ff8f3f;
+}
+
+
+@media (max-width: 768px) {
+	.side{
+		width: 87px;
+	}
+	.logout{
+		padding: 2px 20px;
+		font-size: 16px;
+	}
+	.containerNav{
+		justify-content: space-around;
+		width: 90%;
+	}
+	.searchInp{
+		margin-left: -20px;
+		padding: 10px 10px;
+		width: 50%;
+	}
+	.filterSelect{
+		padding: 8px 5px;
+		font-size: 16px;
+		margin-right: 75px;
+	}
+}
+
+@media (max-width: 426px) {
+	.logout{
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+	}
+	.side{
+		top: 0;
+	}
+	.side.clicked{
+		left: 8rem;
+	}
+	.searchInp{
+		width: 100%;
+		margin: 50px auto 0 50px;
+	}
+	.filterSelect{
+		margin-top: 50px;
+	}
+	.containerNav{
+		width: 100%;
+	}
+
+	.sidebarContainer{
+		width: 200px;
+	}
+	.sidebarContainer h3{
+		font-size: 21px;
+		text-align: center;
+	}
+	.sidebarContainer input{
+		padding: 5px 0px;
+		font-size: 13px;
+		text-align: center;
+	}
+
 }

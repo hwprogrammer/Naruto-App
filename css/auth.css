@@ -53,7 +53,22 @@ body {
 
 .message{
     position: absolute;
-    top: -5rem;
-    left: 10rem;
+    top: -25%;
+    left: 30%;
     transition: 200ms;
+}
+
+@media (max-width: 426px) {
+    .authForm{
+        height: 200px;
+        width: 300px;
+    }
+
+    .authForm h1{
+        font-size: 24px;
+    }
+
+    .message{
+        left: 20%;
+    }
 }
