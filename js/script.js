@@ -140,7 +140,7 @@ const $logout = document.querySelector('.logout')
 
 window.addEventListener('load' , () =>{
 	if (localStorage.getItem('auth') === 'false'){
-		window.open('./auth.html', '_self')
+		window.open('./index.html', '_self')
 	}
 })
 
@@ -252,7 +252,7 @@ $sidebar.addEventListener('click', e =>{
 $logout.addEventListener('click', (e) =>{
 	e.preventDefault()
 	localStorage.setItem('auth', JSON.stringify(false))
-	window.open('./auth.html', '_self')
+	window.open('./index.html', '_self')
 })
 
 

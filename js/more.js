@@ -5,7 +5,7 @@ const $back = document.querySelector('.back')
 
 window.addEventListener('load', () =>{
 	if (localStorage.getItem('auth') === 'false'){
-		window.open('./auth.html', '_self')
+		window.open('./index.html', '_self')
 	}
 })
 

@@ -4,7 +4,7 @@ const $back = document.querySelector('.backBtn')
 
 $back.addEventListener('click', e =>{
 	e.preventDefault()
-	window.open('./index.html', '_self')
+	window.open('./home.html', '_self')
 })
 
 window.addEventListener('load', () =>{

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Naruto App</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav class="containerNav">
+				<button class="logout">Log out</button>
+				<input type="search" class="searchInp" placeholder="Search by name" />
+				<select name="filter" id="filter" class="filterSelect">
+					<option value="name">Name</option>
+					<option value="power">Power</option>
+					<option value="village">Village</option>
+					<option value="level">Level</option>
+					<option value="clan">Clan</option>
+					<option value="element">Element</option>
+				</select>
+			</nav>
+				<img class="side" src="./img/kunai.png" alt="">
+				<div class="sidebarContainer">
+					<h3>Change Background</h3>
+					<input class="changeBg" type="text" placeholder="By color">
+					<select name="bg" id="bg" class="selectBg">
+						<option value="null" disabled selected>Choose</option>
+						<option value="color">By color</option>
+						<option value="img">By image</option>
+					</select>
+				</div>
+		</header>
+		<main>
+			<div class="containerCard">
+			</div>
+			<div class="addContainer">
+				<button class="addCharacter">Add A Character</button>
+			</div>
+		</main>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
+
+

@@ -7,7 +7,7 @@ window.addEventListener('load', () =>{
 		localStorage.setItem('auth', JSON.stringify(false))
 	}else {
 		if (localStorage.getItem('auth') === 'true'){
-			window.open('./index.html', '_self')
+			window.open('./home.html', '_self')
 		}
 	}
 })
@@ -31,7 +31,7 @@ $signin.addEventListener('click', e =>{
 		$password.style.borderColor = null
 		setTimeout( () =>{
 			localStorage.setItem('auth', JSON.stringify(true))
-			window.open('./index.html', '_self')
+			window.open('./home.html', '_self')
 		}, 1500)
 	}else {
 		$email.style.borderColor = 'red'
